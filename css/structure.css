@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orelega+One&display=swap");
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, h4, h5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background-color: whitesmoke;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.green {
+  color: #64c685;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+}
+.main .nav {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.main .nav__name {
+  width: 53%;
+  padding-top: 30px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.main .nav__index {
+  width: 60px;
+  margin-left: 8px;
+  justify-content: center;
+  padding: 30px 20px 10px 20px;
+  text-align: center;
+}
+.main .nav__index:hover {
+  border-bottom: 3px solid #64c685;
+}
+.main .nav .flag {
+  border-bottom: 3px solid #64c685;
+}
+.main .content {
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px #c8c8c8;
+}
+.main .content__title {
+  background-color: #64c685;
+  height: 100px;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=STRUCTURE.CSS.map */

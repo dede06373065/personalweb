@@ -1,0 +1,48 @@
+@import "reset";
+@import "themes";
+
+.main{
+    width:$mainwidth;
+    margin:auto;
+    .nav{
+        display:flex;
+        flex-wrap: nowrap;
+        &__name{
+            width:53%;
+            padding-top:30px;
+            font-size: 1.5rem;
+            font-weight: bolder;
+        }
+        &__index{
+            width:60px;
+            margin-left:8px;
+            justify-content: center;
+            padding:30px 20px 10px 20px;
+            text-align: center;
+            &:hover{
+                border-bottom: 3px solid $green;
+            }
+        }
+        .flag{
+            border-bottom: 3px solid $green;
+        }
+    }
+    .content{
+        margin-top:10px;
+        background-color:white;
+        border-radius: 8px;
+        box-shadow: 5px 5px 5px $shadow;
+        &__title{
+            background-color: $green;
+            height:100px;
+            color:white;
+            border-radius: 10px 10px 0 0;
+        }
+    }
+}
+.footer{
+    width:100%;
+    margin-top:10px;
+    text-align: center;
+}
+

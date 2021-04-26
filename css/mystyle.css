@@ -1,0 +1,521 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orelega+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orelega+One&family=Poppins:wght@500&display=swap");
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, h4, h5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background-color: whitesmoke;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.green {
+  color: #64c685;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+p {
+  line-height: 120%;
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+}
+.main .nav {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.main .nav__name {
+  width: 53%;
+  padding-top: 30px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.main .nav__index {
+  width: 60px;
+  margin-left: 8px;
+  justify-content: center;
+  padding: 30px 20px 10px 20px;
+  text-align: center;
+}
+.main .nav__index:hover {
+  border-bottom: 3px solid #64c685;
+}
+.main .nav .flag {
+  border-bottom: 3px solid #64c685;
+}
+.main .content {
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px #c8c8c8;
+}
+.main .content__title {
+  background-color: #64c685;
+  height: 100px;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.content__title__detail__index li:hover, .content__title__photo {
+  box-shadow: 3px 3px 3px #dbdbdb;
+}
+
+.content__text__education__index {
+  border-left: 1px solid gray;
+  height: 300px;
+}
+
+.round3, .round2, .round1 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 2px solid #64c685;
+  background-color: white;
+  left: -6px;
+}
+
+.one3, .one2, .one1 {
+  position: absolute;
+  width: 30px;
+  border: 1px solid #64c685;
+  height: 0.1px;
+  left: 6px;
+}
+
+.content__text__education__index__details1, .content__text__education__index__details {
+  position: absolute;
+  width: 90%;
+  height: 120px;
+  left: 36px;
+  border-left: 2px solid #64c685;
+  background-color: whitesmoke;
+  box-shadow: 3px 3px 3px #c8c8c8;
+  border-radius: 2px;
+}
+
+.content__text__services__card__index h4, .content__text__education__index__details__title {
+  font-family: "Orelega One", cursive;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+}
+
+.content__text__projects__img3, .content__text__projects__img2, .content__text__projects__img1 {
+  position: absolute;
+  margin-top: 20px;
+  width: 240px;
+  height: 135px;
+  left: 36px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 5px;
+  border: 1px solid #c8c8c8;
+}
+.content__text__projects__img3:hover, .content__text__projects__img2:hover, .content__text__projects__img1:hover {
+  box-shadow: 3px 3px 3px #c8c8c8;
+}
+
+.content__text__projects__induction3, .content__text__projects__induction2, .content__text__projects__induction1 {
+  position: absolute;
+  left: 276px;
+  width: 450px;
+  padding: 65px;
+  text-align: center;
+}
+
+.content__text__projects .link3, .content__text__projects .link2, .content__text__projects .link1 {
+  font-family: "Orelega One", cursive;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 5px;
+  display: block;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #64c685;
+  position: absolute;
+  right: 50px;
+}
+.content__text__projects .link3:hover, .content__text__projects .link2:hover, .content__text__projects .link1:hover {
+  background-color: aliceblue;
+  color: #64c685;
+}
+
+#content__home {
+  height: 320px;
+}
+
+.content__title {
+  position: relative;
+}
+.content__title__photo {
+  width: 250px;
+  height: 295px;
+  position: absolute;
+  left: 45px;
+  top: 50px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.content__title__photo:hover {
+  top: 45px;
+}
+.content__title__photo img {
+  width: 100%;
+}
+.content__title__detail {
+  position: absolute;
+  right: 180px;
+  top: 50px;
+  width: 350px;
+}
+.content__title__detail__name {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bolder;
+  padding: 30px;
+}
+.content__title__detail p {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bolder;
+}
+.content__title__detail__index {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.content__title__detail__index li {
+  margin-top: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: aliceblue;
+  padding: 10px;
+  margin: 10px;
+}
+.content__title__detail__index li img {
+  width: 100%;
+}
+.content__title__detail__index li:hover {
+  cursor: pointer;
+}
+
+.content__text {
+  color: gray;
+  padding: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.content__text__left {
+  width: 45%;
+  margin-right: 50px;
+}
+.content__text table {
+  width: 40%;
+  margin: 30px;
+  margin-left: 50px;
+  font-size: 1.1rem;
+}
+.content__text table td {
+  padding: 5px;
+}
+.content__text__education {
+  width: 43%;
+}
+.content__text__education__index {
+  position: relative;
+}
+.content__text__education__index__details {
+  padding: 10px;
+}
+.content__text__education__index__details .description {
+  margin-top: 25px;
+}
+.content__text__education__index__details1 {
+  padding: 10px;
+  top: 150px;
+}
+.content__text__education__index__details1 .description {
+  margin-top: 25px;
+}
+.content__text__skills {
+  width: 93%;
+  padding-bottom: 30px;
+}
+.content__text__skills__bar {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content__text__skills__bar .first {
+  margin-right: 55px;
+}
+.content__text__skills__bar li {
+  width: 47%;
+}
+.content__text__skills__bar li h5 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-weight: bolder;
+}
+.content__text__skills__bar li .bottom__frame {
+  width: 100%;
+  height: 10px;
+  border: 1px solid gray;
+  position: relative;
+}
+.content__text__skills__bar li .bottom__frame .skill__cover {
+  position: absolute;
+  background-color: green;
+  height: 10px;
+}
+.content__text__skills__bar li .bottom__frame .sc1 {
+  width: 89%;
+}
+.content__text__skills__bar li .bottom__frame .sc2 {
+  width: 92%;
+}
+.content__text__skills__bar li .bottom__frame .sc3 {
+  width: 86%;
+}
+.content__text__skills__bar li .bottom__frame .sc4 {
+  width: 85%;
+}
+.content__text__skills__bar li .bottom__frame .sc5 {
+  width: 88%;
+}
+.content__text__skills__bar li .bottom__frame .sc6 {
+  width: 82%;
+}
+.content__text__services {
+  width: 99%;
+}
+.content__text__services__card {
+  display: flex;
+  justify-content: center;
+}
+.content__text__services__card li {
+  margin: 10px;
+  margin-top: 0;
+  height: 320px;
+  margin: auto;
+  text-align: center;
+}
+.content__text__services__card__index {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  word-break: break-all;
+}
+.content__text__services__card__index img {
+  width: 100%;
+  border-radius: 50%;
+}
+.content__text__services__card__index img:hover {
+  box-shadow: 5px 5px 5px #c8c8c8;
+}
+.content__text__services__card__index h4 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.content__text__clients {
+  width: 99%;
+}
+.content__text__clients__card {
+  display: flex;
+  justify-content: space-evenly;
+}
+.content__text__clients__card li {
+  margin: 20px;
+  margin-top: 0;
+  width: 15%;
+  position: relative;
+}
+.content__text__clients__card li img {
+  width: 100%;
+}
+.content__text__clients__card__cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  opacity: 0.5;
+  top: 0px;
+}
+.content__text__clients__card__cover:hover {
+  display: none;
+}
+.content__text__touch {
+  width: 45%;
+}
+.content__text__touch__map {
+  width: 100%;
+  height: 215px;
+  background-color: antiquewhite;
+}
+.content__text__touch__details p {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.content__text__form {
+  width: 45%;
+  color: gray;
+}
+.content__text__form input {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.content__text__form textarea {
+  border: none;
+  box-shadow: 2px 2px 2px 2px #c8c8c8;
+  color: gray;
+  width: 100%;
+  height: 125px;
+}
+.content__text__form__robot {
+  width: 60%;
+  height: 100px;
+  background-color: aquamarine;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.content__text__form__message {
+  background-color: #64c685;
+  color: white;
+  font-family: "Orelega One", cursive;
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 120px;
+  box-shadow: 2px 2px 2px #c8c8c8;
+}
+.content__text__form__message:hover {
+  color: #64c685;
+  background-color: azure;
+}
+.content__text__projects {
+  width: 100%;
+  height: 480px;
+  position: relative;
+  border-left: 1px solid gray;
+}
+.content__text__projects__img1 {
+  background-image: url(../img/p1.png);
+}
+.content__text__projects__img2 {
+  top: 150px;
+  background-image: url(../img/p2.png);
+}
+.content__text__projects__img3 {
+  top: 300px;
+  background-image: url(../img/p3.png);
+}
+.content__text__projects__induction2 {
+  top: 150px;
+}
+.content__text__projects__induction3 {
+  top: 300px;
+}
+.content__text__projects .link1 {
+  top: 50px;
+}
+.content__text__projects .link2 {
+  top: 200px;
+}
+.content__text__projects .link3 {
+  top: 350px;
+}
+
+.round1 {
+  top: 30px;
+}
+
+.one1 {
+  top: 35px;
+}
+
+.round2 {
+  top: 180px;
+}
+
+.one2 {
+  top: 185px;
+}
+
+.round3 {
+  top: 330px;
+}
+
+.one3 {
+  top: 335px;
+}
+
+/*# sourceMappingURL=mystyle.css.map */

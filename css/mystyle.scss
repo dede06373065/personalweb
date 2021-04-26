@@ -1,0 +1,413 @@
+@import "structure";
+%shadow {
+    box-shadow: 3px 3px 3px rgb(219, 219, 219);
+}
+%resumeindex {
+    border-left: 1px solid $wordcolor;
+    height: 300px;
+}
+%round {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 2px solid $green;
+    background-color: white;
+    left: -6px;
+}
+%one {
+    position: absolute;
+    width: 30px;
+    border: 1px solid $green;
+    height: 0.1px;
+    left: 6px;
+}
+%index__details {
+    position: absolute;
+    width: 90%;
+    height: 120px;
+    left: 36px;
+    border-left: 2px solid $green;
+    background-color: $backcolor;
+    box-shadow: 3px 3px 3px $shadow;
+    border-radius: 2px;
+}
+%details__title {
+    font-family: "Orelega One", cursive;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+}
+%project__img {
+    position: absolute;
+    margin-top:20px;
+    width: 240px;
+    height: 135px;
+    left: 36px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 5px;
+    border: 1px solid $shadow;
+    &:hover {
+        box-shadow: 3px 3px 3px $shadow;
+    }
+}
+%project__induction {
+    position: absolute;
+    left: 276px;
+    width: 450px;
+    padding: 65px;
+    text-align: center;
+}
+%project__link {
+    font-family: "Orelega One", cursive;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 5px;
+    display: block;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: $green;
+    position: absolute;
+    right: 50px;
+    &:hover {
+        background-color: aliceblue;
+        color: $green;
+    }
+}
+#content {
+    &__home {
+        height: 320px;
+    }
+}
+.content__title {
+    position: relative;
+    &__photo {
+        width: 250px;
+        height: 295px;
+        position: absolute;
+        left: 45px;
+        top: 50px;
+        border-radius: 5px;
+        overflow: hidden;
+        @extend %shadow;
+        &:hover {
+            top: 45px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    &__detail {
+        position: absolute;
+        right: 180px;
+        top: 50px;
+        width: 350px;
+        &__name {
+            text-align: center;
+            font-size: 2.2rem;
+            font-weight: bolder;
+            padding: 30px;
+        }
+        p {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bolder;
+        }
+        &__index {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            margin-top: 20px;
+            li {
+                margin-top: 20px;
+                width: 30px;
+                height: 30px;
+                border-radius: 100%;
+                background-color: aliceblue;
+                padding: 10px;
+                margin: 10px;
+                img {
+                    width: 100%;
+                }
+                &:hover {
+                    @extend %shadow;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.content__text {
+    color: $wordcolor;
+    padding: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &__left {
+        width: 45%;
+        margin-right: 50px;
+    }
+    table {
+        width: 40%;
+        margin: 30px;
+        margin-left: 50px;
+        font-size: 1.1rem;
+        td {
+            padding: 5px;
+        }
+    }
+    &__education {
+        width: 43%;
+        &__index {
+            @extend %resumeindex;
+            position: relative;
+            &__details {
+                padding: 10px;
+                @extend %index__details;
+                .description {
+                    margin-top: 25px;
+                }
+                &__title {
+                    @extend %details__title;
+                }
+            }
+            &__details1 {
+                padding: 10px;
+                @extend %index__details;
+                top: 150px;
+                .description {
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+    &__skills {
+        width: 93%;
+        padding-bottom: 30px;
+        &__bar {
+            display: flex;
+            flex-wrap: wrap;
+            .first {
+                margin-right: 55px;
+            }
+            li {
+                h5 {
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                    font-weight: bolder;
+                }
+                width: 47%;
+                .bottom__frame {
+                    width: 100%;
+                    height: 10px;
+                    border: 1px solid $wordcolor;
+                    position: relative;
+                    .skill__cover {
+                        position: absolute;
+                        background-color: green;
+                        height: 10px;
+                    }
+                    .sc1 {
+                        width: 89%;
+                    }
+                    .sc2 {
+                        width: 92%;
+                    }
+                    .sc3 {
+                        width: 86%;
+                    }
+                    .sc4 {
+                        width: 85%;
+                    }
+                    .sc5 {
+                        width: 88%;
+                    }
+                    .sc6 {
+                        width: 82%;
+                    }
+                }
+            }
+        }
+    }
+    &__services {
+        width: 99%;
+        &__card {
+            display: flex;
+            justify-content: center;
+            li {
+                margin: 10px;
+                margin-top: 0;
+                height: 320px;
+                margin: auto;
+                text-align: center;
+            }
+            &__index {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                word-break: break-all;
+                img {
+                    width: 100%;
+                    border-radius: 50%;
+                    &:hover {
+                        box-shadow: 5px 5px 5px $shadow;
+                    }
+                }
+                h4 {
+                    margin-top: 15px;
+                    @extend %details__title;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    &__clients {
+        width: 99%;
+        &__card {
+            display: flex;
+            justify-content: space-evenly;
+            li {
+                margin: 20px;
+                margin-top: 0;
+                width: 15%;
+                position: relative;
+                img {
+                    width: 100%;
+                }
+            }
+            &__cover {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: white;
+                opacity: 0.5;
+                top: 0px;
+                &:hover {
+                    display: none;
+                }
+            }
+        }
+    }
+    &__touch {
+        width: 45%;
+        &__map {
+            width: 100%;
+            height: 215px;
+            background-color: antiquewhite;
+        }
+        &__details {
+            p {
+                margin-top: 15px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+    &__form {
+        width: 45%;
+        color: $wordcolor;
+        input {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+            height: 30px;
+            border: none;
+            border-bottom: 1px solid gray;
+        }
+        textarea {
+            border: none;
+            box-shadow: 2px 2px 2px 2px $shadow;
+            color: $wordcolor;
+            width: 100%;
+            height: 125px;
+        }
+        &__robot {
+            width: 60%;
+            height: 100px;
+            background-color: aquamarine;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        &__message {
+            background-color: $green;
+            color: white;
+            font-family: "Orelega One", cursive;
+            font-family: "Poppins", sans-serif;
+            margin-top:20px;
+            padding: 10px;
+            border-radius: 10px;
+            width: 120px;
+            box-shadow: 2px 2px 2px $shadow;
+            &:hover {
+                color: $green;
+                background-color: azure;
+            }
+        }
+    }
+    &__projects {
+        width: 100%;
+        height: 480px;
+        position: relative;
+        border-left: 1px solid $wordcolor;
+        &__img1 {
+            @extend %project__img;
+            background-image: url(../img/p1.png);
+        }
+        &__img2 {
+            @extend %project__img;
+            top: 150px;
+            background-image: url(../img/p2.png);
+        }
+        &__img3 {
+            @extend %project__img;
+            top: 300px;
+            background-image: url(../img/p3.png);
+        }
+        &__induction1 {
+            @extend %project__induction;
+        }
+        &__induction2 {
+            top: 150px;
+            @extend %project__induction;
+        }
+        &__induction3 {
+            top: 300px;
+            @extend %project__induction;
+        }
+        .link1{
+            @extend %project__link;
+            top: 50px;
+        }
+        .link2 {
+            @extend %project__link;
+            top: 200px;
+        }
+        .link3{
+            @extend %project__link;
+            top: 350px;
+        }
+    }
+}
+.round1 {
+    @extend %round;
+    top: 30px;
+}
+.one1 {
+    @extend %one;
+    top: 35px;
+}
+.round2 {
+    @extend %round;
+    top: 180px;
+}
+.one2 {
+    @extend %one;
+    top: 185px;
+}
+.round3 {
+    @extend %round;
+    top: 330px;
+}
+.one3 {
+    @extend %one;
+    top: 335px;
+}
